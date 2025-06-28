@@ -144,6 +144,14 @@ h2 {
 
 .about-text {
     flex: 1 1 50%;
+    
+}
+
+.about-text p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 4px;
 }
 
 .about-gallery {
