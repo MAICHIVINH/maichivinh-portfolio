@@ -195,8 +195,7 @@
                     <img src="IMG_20250330_030137.jpg" alt="Ảnh bản thân">
                 </div>
                 <div class="gallery-item">
-                    <img src="group4.jpg"
-                        alt="Làm việc nhóm">
+                    <img src="group4.jpg" alt="Làm việc nhóm">
                 </div>
                 <div class="gallery-item">
                     <img src="group3.jpg" alt="Học tập CNTT">
@@ -245,24 +244,20 @@
         </div>
     </footer>
     <script>
-    const toggle = document.getElementById('menu-toggle');
-    const nav = document.getElementById('main-nav');
-    const navLinks = document.querySelectorAll('#main-nav a');
-
-    toggle.addEventListener('click', () => {
-        nav.classList.toggle('show');
-    });
-
-    // Đóng menu khi click vào bất kỳ link nào
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (nav.classList.contains('show')) {
-                nav.classList.remove('show');
-            }
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('main-nav');
+        const navLinks = document.querySelectorAll('#main-nav a');
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('show');
         });
-    });
-</script>
 
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (nav.classList.contains('show')) {
+                    nav.classList.remove('show');
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>
